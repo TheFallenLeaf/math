@@ -12,7 +12,7 @@ import java.util.Map;
 public class Test {
     public static void main(String[] args) {
         DataSource dataSource = new DataSource();
-        Input input = new Input("src/main/resources/data.xlsx");
+        Input input = new Input("data/data.xlsx");
         Map map = input.read();
         dataSource.init(map);
         System.out.println();
